@@ -20,6 +20,7 @@ body {
     display: flex;
     align-items: stretch;
     margin: auto;
+    max-width: 700px;
 }
 
 aside {
@@ -39,7 +40,7 @@ aside {
     flex-basis: 600px;
     font-size: 0.6em;
     font-weight: bold;
-    padding-left: 5%;
+    padding: 0px 5%;
 }
 
 
@@ -115,11 +116,12 @@ header h1 {
 .mgs {
     color: darkorange;
 }
-header h2 {
+.cv header h2 {
+    text-transform: none;
     margin: 0px;
     position: relative;
 }
-header h2:after {
+.cv header h2:after {
     content: "";
     position: absolute;
     left: 0;
@@ -127,4 +129,17 @@ header h2:after {
     height: 1px;
     width: 3em;
     border-bottom: darkorange solid 1px;
+}
+
+/* CV */
+.cv h3 {
+    padding: 0px;
+    margin: 0.1em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: darkorange solid 1px;
+}
+.cv h3 span {
+    font-size: 1.3em;
+    color: darkorange;
 }
