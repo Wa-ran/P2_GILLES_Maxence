@@ -37,6 +37,9 @@ aside {
 .cv {
     flex-grow: 3 ;
     flex-basis: 600px;
+    font-size: 0.6em;
+    font-weight: bold;
+    padding-left: 5%;
 }
 
 
@@ -93,4 +96,35 @@ aside .int {
 aside .int img {
     width: 3.5em;
     padding: 0.7em;
+}
+
+
+/* Section Header */
+header {
+    height: 10em;
+    margin: 2em 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1 {
+    font-size: 3.3em;
+    font-weight: normal;
+    margin: 0px;
+}
+.mgs {
+    color: darkorange;
+}
+header h2 {
+    margin: 0px;
+    position: relative;
+}
+header h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 3em;
+    border-bottom: darkorange solid 1px;
 }
