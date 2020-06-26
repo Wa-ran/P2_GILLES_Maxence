@@ -2,7 +2,6 @@
     font-family: 'metropolisregular';
     src: url('fonts/metropolis-regular-webfont.eot');
     src: url('fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/metropolis-regular-webfont.woff2') format('woff2'),
          url('fonts/metropolis-regular-webfont.woff') format('woff'),
          url('fonts/metropolis-regular-webfont.ttf') format('truetype'),
          url('fonts/metropolis-regular-webfont.svg#metropolisregular') format('svg');
@@ -19,44 +18,49 @@ body {
 }
 .bloc_page {
     display: flex;
-    justify-content: center;
     align-items: stretch;
     margin: auto;
 }
 
 aside {
-    background-color: darkorchid;
+    background-color: darkorange;
     flex-grow: 1;
-    width: 120px;
-    color: white;
+    flex-basis: 200px;
+    max-width: 200px;
     font-size: 0.6em;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 .cv {
     flex-grow: 3 ;
+    flex-basis: 600px;
 }
 
-/* figure : ma tronche est importante, c'est un cv après tout */
+
 aside * {
-    padding-left: 10px;
+    padding: 0% 10%;
 }
+/* figure : ma tronche est importante, c'est un cv après tout */
 aside figure {
-    padding-left: 0px;
-    width: 100px;
-    height: 100px;
+    margin: 2em;
+    padding: 0px;
+    width: 10em;
+    min-height: 10em;
     border: black 1px solid;
     border-radius: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-self: center;
 }
 /* img : pour adaption en cas de changement */
 aside figure img {
-    padding-left: 0px;
     display: block;
+    width: max-content;
+    padding: 0px;
 }
 aside div {
     background-color: black;
@@ -65,15 +69,28 @@ aside div {
 }
 aside h3 {
     padding: 0px;
-    margin: 0px;
-    font-size: 1.7em;
-    color: darkorchid;
+    margin: 0.1em;
+    font-size: 1.5em;
+    color: darkorange;
     text-align: center;
     text-transform: uppercase;
 }
 aside ul {
     list-style: none;
 }
-aside .loisirs {
-    align-self: flex-end;
+aside li {
+    margin-bottom: 1em;
+    padding-left: 0px;
+}
+aside p {
+    height: 100%;
+}
+aside .int {
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+}
+aside .int img {
+    width: 3.5em;
+    padding: 0.7em;
 }
