@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('fonts/metropolis-regular-webfont.eot');
+    src: url('fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/metropolis-regular-webfont.woff') format('woff'),
+         url('fonts/metropolis-regular-webfont.ttf') format('truetype'),
+         url('fonts/metropolis-regular-webfont.svg#metropolisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: 'metropolisregular', "Courier New", "Trebuchet MS", sans-serif;
+}
+body {
+    margin: 0px;
+}
+.bloc_page {
+    display: flex;
+    align-items: stretch;
+    margin: auto;
+    max-width: 700px;
+}
+
+aside {
+    background-color: darkorange;
+    flex-grow: 1;
+    flex-basis: 200px;
+    max-width: 200px;
+    font-size: 0.6em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.cv {
+    flex-grow: 3 ;
+    flex-basis: 600px;
+    font-size: 0.6em;
+    font-weight: bold;
+    padding: 0px 5%;
+}
+
+
+aside * {
+    padding: 0% 10%;
+}
+/* figure : ma tronche est importante, c'est un cv après tout */
+aside figure {
+    margin: 2em;
+    padding: 0px;
+    width: 10em;
+    min-height: 10em;
+    border: black 1px solid;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+/* img : pour adaption en cas de changement */
+aside figure img {
+    display: block;
+    width: max-content;
+    padding: 0px;
+}
+aside div {
+    background-color: black;
+    padding: 0px;
+    width: 100%;
+}
+aside h3 {
+    padding: 0px;
+    margin: 0.1em;
+    font-size: 1.5em;
+    color: darkorange;
+    text-align: center;
+    text-transform: uppercase;
+}
+aside ul {
+    list-style: none;
+}
+aside li {
+    margin-bottom: 1em;
+    padding-left: 0px;
+}
+aside p {
+    height: 100%;
+}
+aside .int {
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+}
+aside .int img {
+    width: 3.5em;
+    padding: 0.7em;
+}
+
+
+/* Section Header */
+header {
+    height: 10em;
+    margin: 2em 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1 {
+    font-size: 3.3em;
+    font-weight: normal;
+    margin: 0px;
+}
+.mgs {
+    color: darkorange;
+}
+.cv header h2 {
+    text-transform: none;
+    margin: 0px;
+    position: relative;
+}
+.cv header h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 3em;
+    border-bottom: darkorange solid 1px;
+}
+
+/* CV */
+.cv h3 {
+    padding: 0px;
+    margin: 0.1em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: darkorange solid 1px;
+}
+.cv h3 span {
+    font-size: 1.3em;
+    color: darkorange;
+}
