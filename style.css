@@ -7,7 +7,6 @@
          url('fonts/metropolis-regular-webfont.svg#metropolisregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
@@ -20,7 +19,7 @@ body {
     display: flex;
     align-items: stretch;
     margin: auto;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 aside {
@@ -41,6 +40,7 @@ aside {
     font-size: 0.6em;
     font-weight: bold;
     padding: 0px 5%;
+    text-align: justify;
 }
 
 
@@ -92,11 +92,14 @@ aside p {
 aside .int {
     background-color: darkorange;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 aside .int img {
-    width: 3.5em;
+    width: 3em;
     padding: 0.7em;
+}
+.propos {
+    text-align: justify;
 }
 
 
@@ -132,14 +135,63 @@ header h1 {
 }
 
 /* CV */
-.cv h3 {
-    padding: 0px;
-    margin: 0.1em;
-    font-size: 1.5em;
-    text-transform: uppercase;
+.cv table {
+    table-layout: auto;
+    width: 100%;
+}
+.cv td {
+    padding: 4% 0.5em 0px 0px;
+    height: auto;
+    vertical-align: top;
+}
+.cv .title td{
+    padding: 0em;
     border-bottom: darkorange solid 1px;
 }
-.cv h3 span {
-    font-size: 1.3em;
+.cv h3 {
+    text-align: left;
+    padding: 0px;
+    margin: 1em 0em 0em 0em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.cv h4 {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 0%;
+    padding: 0%;
+    text-transform: uppercase;
+}
+.cv h5 {
+    text-align: left;
+    margin: 0.5em 0% 0% 0%;
+    padding: 0%;
+    font-size: 1.1em;
+}
+.cv td span {
+    font-size: 0.5em;
     color: darkorange;
+}
+.cv td .fa-dot-circle {
+    font-size: 0.8em;
+}
+.cv td h3 span {
+    font-size: 1.3em;
+    margin: 0%;
+    margin-right: 1em;
+}
+.info {
+    width: 20%;
+}
+.cv ul {
+    list-style-type: none;
+    padding: 0em 1em;
+    text-align: left;
+}
+.cv li {
+    margin-bottom: 0.5em;
+}
+.skills td {
+    width: auto;
+    min-width: 11em;
 }
