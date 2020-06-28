@@ -143,3 +143,7 @@ header h1 {
     font-size: 1.3em;
     color: darkorange;
 }
+.cv table {
+    table-layout: auto;
+    width: 100%;
+}
