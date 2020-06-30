@@ -14,7 +14,6 @@
 }
 body {
     margin: 0px;
-    font-size: 23px;
 }
 .bloc_page {
     display: flex;
@@ -208,22 +207,12 @@ header h1 {
 }
 
 /* Media Queries */
-@media (max-width: 800px) {
+@media (min-width: 601px) {
     body {
-        font-size: 19px;
+        font-size: 25px;
     }
 }
-@media (min-width: 801px) and (max-width: 1200px) {
-    body {
-        font-size: 21px;
-    }
-}
-@media (min-width: 1201px) {
-    body {
-        font-size: 21px;
-    }
-}
-@media (orientation:portrait) and (max-device-width: 500px) { 
+@media (max-width: 600px) { 
     body {
         font-size: 25px;
     }
@@ -269,7 +258,7 @@ header h1 {
         border: darkorange solid 1px;
         border-radius: 10px;
         overflow: hidden;
-        align-items: left;
+        margin-bottom: 1em;
     }
     aside figure {
         display: none;
