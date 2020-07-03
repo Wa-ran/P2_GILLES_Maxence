@@ -12,9 +12,11 @@
 * {
     font-family: 'metropolisregular', "Courier New", "Trebuchet MS", sans-serif;
 }
+html {
+    font-size: 100%;
+}
 body {
     margin: 0px;
-    font-size: 16px;
 }
 /* Toutes les proportions sont relatives au font-size du body */
 .bloc_page {
