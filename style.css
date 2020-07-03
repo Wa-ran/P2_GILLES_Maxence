@@ -231,7 +231,7 @@ header h1 {
 
 /* Media Queries */
 /* Objectif : une dispotion normale pour le paysage, une disposition "colone" pour mobile en portrait et petite réso */
-@media (orientation: portrait) , (max-width: 600px) { 
+@media (orientation: portrait) , (max-width: 599px) { 
     body {
         font-size: 20px;
     }
