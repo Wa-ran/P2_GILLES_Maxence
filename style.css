@@ -79,6 +79,7 @@ aside h3 {
     text-transform: uppercase;
 }
 aside ul {
+    font-size: 1rem;
     list-style: none;
 }
 aside li {
@@ -154,6 +155,7 @@ header h1 {
     width: 100%;
 }
 .cv td {
+    font-size: 1rem;
     padding: 4% 0.5rem 0px 0px;
     height: auto;
     vertical-align: top;
@@ -201,6 +203,7 @@ header h1 {
 .date {
     width: 7rem;
     text-align: left;
+    word-break: break-word;
 }
 .cv ul {
     list-style-type: none;
@@ -224,14 +227,31 @@ header h1 {
     padding-left: 2rem;
     margin-top: 4%;
 }
+.skills h4 {
+    display: inline-block;
+    width: max-content;
+}
 .skills .fa-circle {
     padding: 0.5rem 0.5rem 0rem 0rem;
     vertical-align: top;
 }
 
 /* Media Queries */
+@media (max-width: 850px) and (min-width: 751px) {
+    .date {
+        width: 5.5rem;
+    }
+}
+@media (max-width: 750px) and (min-width: 601px) {
+    a {
+        font-size: 0.9rem;
+    }
+    .date {
+        width: 4rem;
+    }
+}
 /* Objectif : une dispotion normale pour le paysage, une disposition "colone" pour mobile en portrait et petite réso */
-@media (orientation: portrait) , (max-width: 599px) { 
+@media (orientation: portrait) , (max-width: 600px) { 
     body {
         font-size: 20px;
     }
@@ -271,6 +291,10 @@ header h1 {
     .cv header h2:after {
         display: none;
     }
+    .date {
+        width: 4rem;
+        font-size: 0.7em;
+    }
     .skills div {
         width: 100%;
     }
@@ -280,6 +304,9 @@ header h1 {
         border-radius: 10px;
         overflow: hidden;
         margin: 1rem 0rem;
+    }
+    a {
+        padding-left: 1rem;
     }
     .propos {
         font-size: 0.8em;
