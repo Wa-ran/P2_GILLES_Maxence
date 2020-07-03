@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'metropolisregular';
     src: url('fonts/metropolis-regular-webfont.eot');
-    src: url('fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/metropolis-regular-webfont.eot?#iefix') format('rembedded-opentype'),
          url('fonts/metropolis-regular-webfont.woff') format('woff'),
          url('fonts/metropolis-regular-webfont.ttf') format('truetype'),
          url('fonts/metropolis-regular-webfont.svg#metropolisregular') format('svg');
@@ -14,12 +14,13 @@
 }
 body {
     margin: 0px;
+    font-size: 16px;
 }
+/* Toutes les proportions sont relatives au font-size du body */
 .bloc_page {
     display: flex;
     align-items: stretch;
     margin: auto;
-    font-size: 0.6em;
 }
 
 aside {
@@ -28,8 +29,6 @@ aside {
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 .cv {
     width: 68%;
@@ -37,19 +36,19 @@ aside {
     padding: 0px 5%;
     text-align: justify;
 }
-
+/* J'ai préféré les % pour gérer les proportions */
 
 aside * {
     padding: 0% 10%;
 }
-/* figure : ma tronche est importante, c'est un cv après tout */
+/* Flexbox column sans wrap, chaque div gère son padding */
 aside figure {
-    margin: 2em;
+    margin: 2rem;
     padding: 0px;
-    min-width: 10em;
-    max-width: 10em;
-    min-height: 10em;
-    max-height: 10em;
+    min-width: 10rem;
+    max-width: 10rem;
+    min-height: 10rem;
+    max-height: 10rem;
     border: rgb(223, 124, 3) 2px solid;
     border-radius: 100%;
     overflow: hidden;
@@ -57,22 +56,24 @@ aside figure {
     justify-content: center;
     align-self: center;
 }
-/* img : pour adaption en cas de changement */
+/* min/max pour forcer la taille en toute circonstance */
+/* Cette figure disparaît en mode portrait */
 img {
-    display: block;
-    height: 10em;
-    padding: 0px;
+    padding: 0%;
+    height: 10.3rem;
 }
+/* L'img doit s'adapter qu'importe sa résolution */
 aside div {
     background-color: black;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
     padding: 0px;
     width: 100%;
 }
+/* Ces div ne sont associées qu'aux h3 */
 aside h3 {
     padding: 0px;
-    margin: 0.1em;
-    font-size: 1.5em;
+    margin: 0.1rem;
+    font-size: 1.5rem;
     color: darkorange;
     text-align: center;
     text-transform: uppercase;
@@ -81,13 +82,24 @@ aside ul {
     list-style: none;
 }
 aside li {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     padding-left: 0px;
 }
-aside p {
-    height: 100%;
+a {
+    padding-left: 0px;
+    font-style: oblique;
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    font-weight: normal;
+}
+a:hover {
+    text-decoration: underline;
 }
 .propos {
+    font-size: 1rem;
+    height: 100%;
     text-align: justify;
 }
 aside .int {
@@ -96,27 +108,28 @@ aside .int {
     justify-content: space-evenly;
 }
 aside .int img {
-    width: 3em;
-    height: 3em;
-    padding: 0.7em;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.7rem;
 }
 
 /* Section Header */
 header {
-    height: 10em;
-    margin: 1.5em 0px;
+    height: 10rem;
+    margin: 1.5rem 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 header h1 {
-    font-size: 3.3em;
+    font-size: 3.3rem;
     font-weight: normal;
     margin: 0px;
 }
 .mobile {
     display: none ;
 }
+/* La figure associée ne doit apparaître qu'en portrait */
 .mgs {
     color: darkorange;
 }
@@ -130,9 +143,10 @@ header h1 {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 3em;
+    width: 3rem;
     border-bottom: darkorange solid 1px;
 }
+/* Pour la petite ligne sous le header */
 
 /* CV */
 .cv table {
@@ -140,58 +154,63 @@ header h1 {
     width: 100%;
 }
 .cv td {
-    padding: 4% 0.5em 0px 0px;
+    padding: 4% 0.5rem 0px 0px;
     height: auto;
     vertical-align: top;
 }
 .cv .title td{
-    padding: 0em;
+    padding: 0rem;
     border-bottom: darkorange solid 1px;
 }
 .cv h3 {
     text-align: left;
     padding: 0px;
-    margin: 1em 0em 0em 0em;
-    font-size: 1.5em;
+    margin: 1rem 0rem 0rem 0rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 .cv h4 {
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 0%;
     padding: 0%;
     text-transform: uppercase;
 }
 .cv h5 {
     text-align: left;
-    margin: 0.5em 0% 0% 0%;
+    margin: 0.5rem 0% 0% 0%;
     padding: 0%;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: rgb(150,150,150);
 }
-.cv td span {
-    font-size: 0.5em;
+.fas {
     color: darkorange;
 }
-.cv td .fa-dot-circle {
-    font-size: 0.8em;
+.fa-circle {
+    font-size: 0.5rem;
+}
+.fa-dot-circle {
+    font-size: 0.8rem;
 }
 .cv td h3 span {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     margin: 0%;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
-.info {
-    width: 20%;
+/* Pour les icônes des sous-titres */
+.date {
+    width: 7rem;
+    text-align: left;
 }
 .cv ul {
     list-style-type: none;
-    padding: 0em;
+    padding: 0rem;
     text-align: left;
 }
 .cv li {
-    margin-bottom: 0.5em;
-    padding-left: 0.5em;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .skills {
@@ -200,21 +219,21 @@ header h1 {
     justify-content: flex-start;
 }
 .skills div {
-    width: 30%;
+    width: 28%;
     min-width: 150px;
-    padding-left: 2em;
+    padding-left: 2rem;
     margin-top: 4%;
+}
+.skills .fa-circle {
+    padding: 0.5rem 0.5rem 0rem 0rem;
+    vertical-align: top;
 }
 
 /* Media Queries */
-@media (min-width: 601px) {
+/* Objectif : une dispotion normale pour le paysage, une disposition "colone" pour mobile en portrait et petite réso */
+@media (orientation: portrait) , (max-width: 600px) { 
     body {
-        font-size: 25px;
-    }
-}
-@media (max-width: 600px) { 
-    body {
-        font-size: 25px;
+        font-size: 20px;
     }
     .bloc_page {
         flex-direction: column-reverse;
@@ -232,14 +251,15 @@ header h1 {
         text-align: center;
         border: darkorange solid 1px;
         border-radius: 10px;
+        padding: 1rem;
     }
     .mobile {
-    margin: 0.5em;
+    margin: 0.5rem;
     padding: 0px;
-    min-width: 10em;
-    max-width: 10em;
-    min-height: 10em;
-    max-height: 10em;
+    min-width: 10rem;
+    max-width: 10rem;
+    min-height: 10rem;
+    max-height: 10rem;
     border: rgb(223, 124, 3) 2px solid;
     border-radius: 100%;
     overflow: hidden;
@@ -247,6 +267,7 @@ header h1 {
     justify-content: center;
     align-self: center;
     }
+    /* Figure en haut de page */
     .cv header h2:after {
         display: none;
     }
@@ -254,16 +275,24 @@ header h1 {
         width: 100%;
     }
     aside {
-        width: 85%;
-        border: darkorange solid 1px;
+        width: 95%;
+        border: black solid 1px;
         border-radius: 10px;
         overflow: hidden;
-        margin-bottom: 1em;
+        margin: 1rem 0rem;
     }
-    aside figure {
-        display: none;
+    .propos {
+        font-size: 0.8em;
     }
     aside .int img {
-        padding: 0.5em;
+        padding: 0.5rem;
     }
+    aside figure { 
+        visibility: hidden;
+        min-height: 0px;
+        max-height: 0px;
+        margin: 0px;
+        border: 0px;
+    }
+    /* Pas le choix ici car figure{display:none} provoque un décalage de l'image après une transition de l'orientation de portrait vers landscape \°~°/ */
 }
