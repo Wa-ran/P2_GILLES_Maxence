@@ -26,7 +26,7 @@ body {
 }
 
 aside {
-    background-color: darkorange;
+    background-color: rgb(230,126,34);
     width: 32%;
     font-weight: bold;
     display: flex;
@@ -76,7 +76,7 @@ aside h3 {
     padding: 0px;
     margin: 0.1rem;
     font-size: 1.5rem;
-    color: darkorange;
+    color: rgb(230,126,34);
     text-align: center;
     text-transform: uppercase;
 }
@@ -106,7 +106,7 @@ a:hover {
     text-align: justify;
 }
 aside .int {
-    background-color: darkorange;
+    background-color: rgb(230,126,34);
     display: flex;
     justify-content: space-evenly;
 }
@@ -134,7 +134,7 @@ header h1 {
 }
 /* La figure associée ne doit apparaître qu'en portrait */
 .mgs {
-    color: darkorange;
+    color: rgb(230,126,34);
 }
 .cv header h2 {
     text-transform: none;
@@ -147,7 +147,7 @@ header h1 {
     left: 0;
     bottom: 0;
     width: 3rem;
-    border-bottom: darkorange solid 1px;
+    border-bottom: rgb(230,126,34) solid 1px;
 }
 /* Pour la petite ligne sous le header */
 
@@ -164,7 +164,7 @@ header h1 {
 }
 .cv .title td{
     padding: 0rem;
-    border-bottom: darkorange solid 1px;
+    border-bottom: rgb(230,126,34) solid 1px;
 }
 .cv h3 {
     text-align: left;
@@ -188,7 +188,7 @@ header h1 {
     color: rgb(150,150,150);
 }
 .fas {
-    color: darkorange;
+    color: rgb(230,126,34);
 }
 .fa-circle {
     font-size: 0.5rem;
@@ -241,12 +241,12 @@ header h1 {
 }
 
 /* Media Queries */
-@media (max-width: 850px) and (min-width: 751px) {
+@media (max-width: 850px) and (min-width: 751px) and (orientation: landscape) {
     .date {
         width: 5.5rem;
     }
 }
-@media (max-width: 750px) and (min-width: 601px) {
+@media (max-width: 750px) and (min-width: 601px) and (orientation: landscape) {
     a {
         font-size: 0.9rem;
     }
@@ -256,9 +256,6 @@ header h1 {
 }
 /* Objectif : une dispotion normale pour le paysage, une disposition "colone" pour mobile en portrait et petite réso */
 @media (orientation: portrait) , (max-width: 600px) { 
-    body {
-        font-size: 20px;
-    }
     .bloc_page {
         flex-direction: column-reverse;
         align-items: center;
@@ -273,7 +270,7 @@ header h1 {
         display: flex;
         justify-content: center;
         text-align: center;
-        border: darkorange solid 1px;
+        border: rgb(230,126,34) solid 1px;
         border-radius: 10px;
         padding: 1rem;
     }
@@ -284,7 +281,7 @@ header h1 {
     max-width: 10rem;
     min-height: 10rem;
     max-height: 10rem;
-    border: rgb(223, 124, 3) 2px solid;
+    border: rgb(230,126,34) 2px solid;
     border-radius: 100%;
     overflow: hidden;
     display: flex;
@@ -297,7 +294,6 @@ header h1 {
     }
     .date {
         width: 4rem;
-        font-size: 0.7em;
     }
     .skills div {
         width: 100%;
@@ -311,9 +307,6 @@ header h1 {
     }
     a {
         padding-left: 1rem;
-    }
-    .propos {
-        font-size: 0.8em;
     }
     aside .int img {
         padding: 0.5rem;
