@@ -109,6 +109,7 @@ aside .int {
     background-color: rgb(230,126,34);
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 aside .int img {
     width: 3rem;
@@ -273,6 +274,9 @@ header h1 {
         border: rgb(230,126,34) solid 1px;
         border-radius: 10px;
         padding: 1rem;
+    }
+    header h1 {
+        font-size: 2.5rem;
     }
     .mobile {
     margin: 0.5rem;
