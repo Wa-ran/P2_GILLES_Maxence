@@ -153,10 +153,6 @@ header h1 {
 /* Pour la petite ligne sous le header */
 
 /* CV */
-.cv table {
-    table-layout: auto;
-    width: 100%;
-}
 .cv .info {
     display: flex;
     padding-top: 0%;
