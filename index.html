@@ -17,29 +17,37 @@
                 <!-- Utilisation de figure plutôt qu'une img seule (pour le référencement) -->
                 <!-- Cette figure disparaît avec les mediaqueries -->
                 <figure>
-                    <a href="galere.jpg"><img src="galere_cv.jpg" alt="Maxence GILLES en formation."></a>
+                    <a class="tronche" href="galere.jpg"><img src="galere_cv.jpg" alt="Maxence GILLES en formation."></a>
                 </figure>
 
-                <div><h3>Contact</h3></div>
-                <ul>
-                    <li>Adresse<br /><a href="https://www.google.com/maps/place/Lyon/" target="_blank">Lyon, France</a></li>
-                    <li>Téléphone<br /><a href="tel:+33788001982" target="_blank">07 88 00 19 82</a></li>
-                    <li>Email<br /><a href="mailto:mgs.gilles@gmail.com" target="_blank">mgs.gilles@gmail.com</a></li>
-                    <li>Site Web<br /><a href="https://Wa-ran.github.io/P2_GILLES_Maxence/" target="_blank">Wa-ran.github.io</a></li>
-                    <li>Situation<br /><a>27 ans, célibataire, permis&nbsp;B</a></li>
-                </ul>
+                <section>
+                    <div><h3>Contact</h3></div>
+                    <ul>
+                        <li>Adresse<br /><a href="https://www.google.com/maps/place/Lyon/" target="_blank">Lyon, France</a></li>
+                        <li>Téléphone<br /><a href="tel:+33788001982" target="_blank">07 88 00 19 82</a></li>
+                        <li>Email<br /><a href="mailto:mgs.gilles@gmail.com" target="_blank">mgs.gilles@gmail.com</a></li>
+                        <li>Site Web<br /><a href="https://Wa-ran.github.io/P2_GILLES_Maxence/" target="_blank">Wa-ran.github.io</a></li>
+                        <li>Situation<br /><a>27 ans, célibataire, permis&nbsp;B</a></li>
+                    </ul>
+                </section>
+                
+                <section class="long">
+                    <div><h3>à propos de moi</h3></div>
+                    <p class="propos">Je suis passionné depuis toujours par les sciences, les jeux et la logique, mais je n’ai jamais cherché à concilier passion et travail.<br /><br />
+                        Une erreur qu'aujourd'hui je suis ravi de pouvoir ratrapper, en entamant une reconversion professionnelle dans l’informatique :)
+                        </p>
+                </section>
 
-                <div><h3>à propos de moi</h3></div>
-                <p class="propos">Je suis passionné depuis toujours par les sciences, les jeux et la logique, mais je n’ai jamais cherché à concilier passion et travail.<br /><br />
-                    Une erreur qu'aujourd'hui je suis ravi de pouvoir ratrapper, en entamant une reconversion professionnelle dans l’informatique :)
-                    </p>
                     <!-- Ici les img fas sont gérées en flexbox -->
-                <div><h3>Intérêts</h3></div>
-                <div class="int">
-                    <img src="img/rocket-solid.svg" alt="Espace" title="Espace" />
-                    <img src="img/atom-solid.svg" alt="Sciences" title="Sciences" />
-                    <img src="img/gamepad-solid.svg" alt="Jeux" title="Jeux" />
-                </div>
+                <section>
+                    <div><h3>Loisirs</h3></div>
+                    <div class="int">
+                        <div><img src="img/rocket-solid.svg" alt="Espace" title="Espace" /></div>
+                        <div><img src="img/atom-solid.svg" alt="Sciences" title="Sciences" /></div>
+                        <div><img src="img/gamepad-solid.svg" alt="Jeux" title="Jeux" /></div>
+                    </div>
+                </section>
+
             </aside>
 
             <div class="cv">
@@ -54,7 +62,7 @@
             
                 <section>
                     <!-- Flexbox -->
-                    <div>
+                    <section>
                         <div class="title">
                             <div><h3><span class="fas fa-graduation-cap"></span>Formations</h3></div>
                         </div>
@@ -67,7 +75,7 @@
                             </div>
                         </div>
                         <div class="info">
-                            <div><span class="fas fa-circle"></span></div>
+                            <div></div>
                             <div class="date">2011 - 2013<br />Lyon</div>
                             <div><h4>BTS Géomètre-Topographe</h4>
                                 <h5>La Martinière-Monplaisir</h5>
@@ -75,8 +83,8 @@
                                 Ceci mis à part, ce BTS m'a vraiment ennuyé...</p>
                             </div>
                         </div>
-                    </div>
-                    <div>
+                    </section>
+                    <section>
                         <div class="title">
                             <div><h3><span class="fas fa-briefcase"></span>Expériences</h3></div>
                         </div>
@@ -89,7 +97,7 @@
                             </div>
                         </div>
                         <div class="info">
-                            <div><span class="fas fa-circle"></span></div>
+                            <div></div>
                             <div class="date">2016 - 2019<br />Lyon</div>
                             <div><h4>AE : Expert en Etat des Lieux</h4>
                                 <h5>Leximpact</h5>
@@ -100,7 +108,7 @@
                             </div>
                         </div>
                         <div class="info">
-                            <div><span class="fas fa-circle"></span></div>
+                            <div></div>
                             <div class="date">2015 - 2016<br />Lyon</div>
                             <div><h4>Hôte d'accueil</h4>
                                 <h5>Penelope</h5>
@@ -110,7 +118,7 @@
                             </div>
                         </div>
                         <div class="info">
-                            <div><span class="fas fa-circle"></span></div>
+                            <div></div>
                             <div class="date">2013 - 2014<br />Lyon</div>
                             <div><h4>Géomètre-Topographe</h4>
                                 <h5>Operandi</h5>
@@ -119,39 +127,35 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </section>
                     
-                    <div>
-                        <div class="title">
-                            <div><h3><span class="fas fa-pencil-alt"></span>Compétences</h3></div>
-                        </div>
-                    </div>
-                            <!-- Une flexbox pour la dernière partie qui doit changer en mode portrait -->
-                    <div class="skills">
+                    <section>
                         <div>
-                            <h4><span class="fas fa-circle"></span>Informatique</h4>
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
-                                    <li>GIT + GITHUB</li>
-                                </ul>
+                            <div class="title">
+                                <div><h3><span class="fas fa-pencil-alt"></span>Recommandations</h3></div>
+                            </div>
                         </div>
-                        <div>
-                            <h4><span class="fas fa-circle"></span>Langues</h4>
-                                <ul>
-                                    <li>Français (Langue maternelle)</li>
-                                    <li>Anglais (Courant)</li>
-                                    <li>Japonais (Touriste)</li>
-                                </ul>
+                                <!-- Une flexbox pour la dernière partie qui doit changer en mode portrait -->
+                        <div class="skills">
+                            <div>
+                                <h4>Spiderman</h4>
+                                    <ul>
+                                        <li>"Création du portfolio de Peter Parker"</li>
+                                        <li>Contact : Le Daily Bugle</li>
+                                        <li>New-York</li>
+                                    </ul>
+                            </div>
+                            <div>
+                                <h4>Palpatine</h4>
+                                    <ul>
+                                        <li>"Mise à jour du blog de propagande impérial"</li>
+                                        <li>Contact : Dark Vador</li>
+                                        <li>Etoile Noire</li>
+                                    </ul>
+                            </div>
                         </div>
-                        <div>
-                            <h4><span class="fas fa-circle"></span>Complémentaires</h4>
-                                <ul>
-                                    <li>Bon contact relationel, gestion des conflits</li>
-                                    <li>Prise de parole en publique (plus de 100 personnes)</li>
-                                </ul>
-                        </div>
-                    </div>
+                    </section>
+
                 </section>    
             </div>
             

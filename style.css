@@ -31,17 +31,18 @@ aside {
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 .cv {
     width: 68%;
     font-weight: bold;
-    padding: 0px 5%;
+    padding: 0 5% 10px 5%;
     text-align: justify;
 }
 /* J'ai préféré les % pour gérer les proportions */
 
 aside * {
-    padding: 0% 10%;
+    padding: 0% 2rem;
 }
 /* Flexbox column sans wrap, chaque div gère son padding */
 aside figure {
@@ -51,7 +52,7 @@ aside figure {
     max-width: 10rem;
     min-height: 10rem;
     max-height: 10rem;
-    border: rgb(223, 124, 3) 2px solid;
+    border: black 2px solid;
     border-radius: 100%;
     overflow: hidden;
     display: flex;
@@ -65,16 +66,22 @@ img {
     height: 10.3rem;
 }
 /* L'img doit s'adapter qu'importe sa résolution */
+.tronche {
+    padding: 0;
+}
+aside section {
+    padding: 0;
+}
 aside div {
     background-color: black;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     padding: 0px;
     width: 100%;
 }
 /* Ces div ne sont associées qu'aux h3 */
 aside h3 {
     padding: 0px;
-    margin: 0.1rem;
+    margin: 0;
     font-size: 1.5rem;
     color: rgb(230,126,34);
     text-align: center;
@@ -102,8 +109,10 @@ a:hover {
 }
 .propos {
     font-size: 1rem;
-    height: 100%;
     text-align: justify;
+}
+.long {
+    height: 100%;
 }
 aside .int {
     background-color: rgb(230,126,34);
@@ -111,10 +120,20 @@ aside .int {
     justify-content: space-evenly;
     align-items: center;
 }
+aside .int div {
+    background-color: rgb(230,126,34);
+    border: black solid 2px;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    padding: 1%;
+    overflow: hidden;
+}
 aside .int img {
     width: 3rem;
     height: 3rem;
-    padding: 0.7rem;
+    margin: auto;
 }
 
 /* Section Header */
@@ -207,8 +226,8 @@ div .fas {
 }
 /* Pour les icônes des sous-titres */
 .date {
-    max-width: 7rem;
-    min-width: 7rem;
+    max-width: 15rem;
+    min-width: 15rem;
     font-size: 1rem;
     text-align: left;
     word-break: break-word;
@@ -230,22 +249,18 @@ div .fas {
     justify-content: flex-start;
 }
 .skills div {
-    width: 28%;
+    width: 45%;
     min-width: 150px;
-    padding-left: 2rem;
 }
 .skills h4 {
     font-size: 1.2rem;
     display: inline-block;
     width: max-content;
 }
-.skills .fa-circle {
-    padding: 0.5rem 0.5rem 0rem 0rem;
-    vertical-align: top;
-}
+
 
 /* Media Queries */
-@media (max-width: 850px) and (min-width: 751px) and (orientation: landscape) {
+@media (max-width: 950px) and (min-width: 751px) and (orientation: landscape) {
     .date {
         max-width: 5.5rem;
         min-width: 5.5rem;
@@ -314,12 +329,10 @@ div .fas {
         border-radius: 10px;
         overflow: hidden;
         margin: 1rem 0rem;
+        padding-bottom: 0;
     }
     a {
         padding-left: 1rem;
-    }
-    aside .int img {
-        padding: 0.5rem;
     }
     aside figure { 
         visibility: hidden;
