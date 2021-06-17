@@ -21,6 +21,10 @@ html {
 h1, h2, h3, h4, h5 {
     line-height: 2.2rem;
 }
+h1 div {
+    font-size: inherit;
+    margin-bottom: 1rem;
+}
 body {
     margin: 0px;
 }
@@ -52,10 +56,10 @@ aside * {
 aside figure {
     margin: 1rem;
     padding: 0px;
-    min-width: 12rem;
-    max-width: 12rem;
-    min-height: 12rem;
-    max-height: 12rem;
+    min-width: 12em;
+    max-width: 12em;
+    min-height: 12em;
+    max-height: 12em;
     /* border: black 2px solid; */
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5), inset 3px 5px #B94C2D;
     border-radius: 100%;
@@ -78,16 +82,19 @@ img {
 aside section {
     padding: 0;
 }
+section ul, section div, section p{
+    padding: 0 10%;
+}
 aside div {
     background-color: black;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0px;
     width: 100%;
 }
 /* Ces div ne sont associées qu'aux h3 */
 aside h3 {
     padding: 0px;
-    margin: 0;
+    margin: 0 !important;
     margin-top: 1rem;
     font-size: 1.5rem;
     color: #B94C2D;
@@ -232,10 +239,8 @@ div .fas {
 }
 /* Pour les icônes des sous-titres */
 .date {
-    max-width: 10rem;
-    min-width: 10rem;
+    width: fit-content;
     text-align: left;
-    word-break: break-word;
 }
 .cv ul {
     list-style-type: none;
@@ -255,7 +260,7 @@ div .fas {
     margin-bottom: 0.5rem;
 }
 .compSection {
-    padding: 0 2rem;
+    padding: 0 10%;
     margin-bottom: 0.5rem;
     width: auto;
     background-color: inherit;
@@ -350,6 +355,10 @@ div .fas {
         background-color: #fff;
         max-width: 80%;
         margin: auto;
+    }
+    h1 {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
