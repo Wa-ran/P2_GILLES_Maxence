@@ -188,6 +188,7 @@ header h1 {
 /* CV */
 .cv .info {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 0%;
 }
 .cv h4 {
@@ -214,12 +215,14 @@ header h1 {
     font-size: 1.2rem;
     margin: 0%;
     padding: 0%;
+    padding-left: 1rem;
     text-transform: uppercase;
 }
 .cv h5 {
     text-align: left;
     margin: 0.5rem 0% 0% 0%;
     padding: 0%;
+    padding-left: 1rem;
     font-size: 1.1rem;
     color: rgb(150,150,150);
 }
@@ -365,13 +368,12 @@ div .fas {
     }
 }
 
-/* @media (max-width: 950px) and (min-width: 751px) and (orientation: landscape) {
+@media (max-width: 1200px) and (orientation: landscape) {
     .date {
-        max-width: 5.5rem;
-        min-width: 5.5rem;
+        min-width: 80%;
     }
 }
-@media (max-width: 750px) and (min-width: 601px) and (orientation: landscape) {
+/* @media (max-width: 750px) and (min-width: 601px) and (orientation: landscape) {
     a {
         font-size: 0.9rem;
     }
