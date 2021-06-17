@@ -190,6 +190,9 @@ header h1 {
     display: flex;
     padding-top: 0%;
 }
+.cv h4 {
+    line-height: initial;
+}
 .cv div {
     padding: 4% 0.5rem 0px 0px;
     height: auto;
@@ -347,7 +350,7 @@ div .fas {
 
 
 /* Media Queries */
-@media (min-width: 750px) and (orientation: landscape) {
+@media (min-width: 790px) and (orientation: landscape) {
     html {
         background-color: darkgrey;
     }
@@ -408,6 +411,7 @@ div .fas {
     min-height: 10rem;
     max-height: 10rem;
     border: #B94C2D 2px solid;
+    background: #B94C2D;
     border-radius: 100%;
     overflow: hidden;
     display: flex;
