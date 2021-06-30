@@ -17,6 +17,7 @@
 }
 html {
     font-size: 18px;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5 {
     line-height: 2.2rem;
@@ -450,4 +451,16 @@ div .fas {
         border: 0px;
     }
     /* Pas le choix ici car figure{display:none} provoque un décalage de l'image après une transition de l'orientation de portrait vers landscape \°~°/ */
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #B94C2D;
+    border-radius: 5px;
 }
