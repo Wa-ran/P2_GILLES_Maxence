@@ -246,7 +246,6 @@ div .fas {
 }
 /* Pour les icônes des sous-titres */
 .date {
-    width: fit-content;
     text-align: left;
 }
 .cv ul {
@@ -424,10 +423,6 @@ div .fas {
     /* Figure en haut de page */
     .cv header h2:after {
         display: none;
-    }
-    .date {
-        max-width: 3rem;
-        min-width: 3rem;
     }
     .skills div {
         width: 100%;
